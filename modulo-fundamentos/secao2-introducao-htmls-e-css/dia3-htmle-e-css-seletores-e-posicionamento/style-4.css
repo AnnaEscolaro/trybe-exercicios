@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+}
+
+
+div:hover {
+    border: 2px solid black;
+    width: 190px;
+    text-align: center;
+    padding: 10px;
+}
+
+#cor-primaria {
+    background-color: blue;
+    width: 175px;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+
+#cor-secundaria {
+    background-color: green;
+    width: 175px;
+    text-align: center;
+    padding: 10px;
+}
+
+#cor-complementar {
+    background-color:aquamarine ;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+
+#cor-escura {
+    background-color: brown;
+    width: 175px;
+    text-align: center;
+    padding: 10px;
+}
+
+#cor-clara{
+    background-color: bisque;
+    width: 175px;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
