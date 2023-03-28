@@ -22,31 +22,69 @@
 //     console.log('a é o maior');
 // }
 
-let valor = -5;
+// let valor = -5;
 
-if (valor > 0) {
-    console.log('positive');
-} else if (valor < 0) {
-    console.log('negative');
-} else {
-    console.log('zero');
-};
+// if (valor > 0) {
+//     console.log('positive');
+// } else if (valor < 0) {
+//     console.log('negative');
+// } else {
+//     console.log('zero');
+// };
 
 
-let angulo1 = 90;
-let angulo2 = 45;
-let angulo3 = 46;
+// let angulo1 = 90;
+// let angulo2 = 45;
+// let angulo3 = 46;
 
-let somaAngulos = angulo1 + angulo2 + angulo3;
+// let somaAngulos = angulo1 + angulo2 + angulo3;
 
-let somaAngulosPositivos = angulo1 > 0 && angulo2 > 0 && angulo3 > 0;
+// let somaAngulosPositivos = angulo1 > 0 && angulo2 > 0 && angulo3 > 0;
 
-if(somaAngulosPositivos){
-    if(somaAngulos === 180) {
-        console.log(true);
-} else {
-        console.log(false);
-};
-} else {
-        console.log('erro');
+// if(somaAngulosPositivos){
+//     if(somaAngulos === 180) {
+//         console.log(true);
+// } else {
+//         console.log(false);
+// };
+// } else {
+//         console.log('erro');
+// }
+
+// let moves = 'anna';
+
+// switch(moves) {
+//     case 'rainha':
+//         console.log('move xyz');
+//         break;
+//     case 'peao':
+//         console.log('move xpto');
+//         break;
+//     case 'rei':
+//         console.log('move abc');
+//         break;
+//     default:
+//         console.log('não é uma peça de xadrex :/');
+// }
+
+let grade = 62;
+
+if (grade >=90 && grade <= 100) {
+    console.log('A');
 }
+else if (grade >=80) {
+    console.log('B');
+}
+else if (grade >=70) {
+    console.log('C');
+}
+else if (grade >=60) {
+    console.log('D');
+}
+else if (grade >=50) {
+    console.log('E');
+}
+else {
+    console.log('F');
+}
+
