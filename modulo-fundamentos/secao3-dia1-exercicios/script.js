@@ -67,24 +67,69 @@
 //         console.log('não é uma peça de xadrex :/');
 // }
 
-let grade = 62;
+// let grade = 62;
 
-if (grade >=90 && grade <= 100) {
-    console.log('A');
-}
-else if (grade >=80) {
-    console.log('B');
-}
-else if (grade >=70) {
-    console.log('C');
-}
-else if (grade >=60) {
-    console.log('D');
-}
-else if (grade >=50) {
-    console.log('E');
-}
-else {
-    console.log('F');
+// if (grade >=90 && grade <= 100) {
+//     console.log('A');
+// }
+// else if (grade >=80) {
+//     console.log('B');
+// }
+// else if (grade >=70) {
+//     console.log('C');
+// }
+// else if (grade >=60) {
+//     console.log('D');
+// }
+// else if (grade >=50) {
+//     console.log('E');
+// }
+// else {
+//     console.log('F');
+// }
+
+let salarioBruto = 5000;
+let aliquotaInss;
+let inss;
+let baseCalculoIR;
+let aliquotaIR;
+let deducaoIR;
+let impostoRenda;
+
+
+if (salarioBruto <= 1556.94) {
+    aliquotaInss = 0.08;
+    inss = salarioBruto * aliquotaInss;
+} else if (salarioBruto <= 2594.92) {
+    aliquotaInss = 0.09;
+    inss = salarioBruto * aliquotaInss;
+} else if (salarioBruto <= 5189.82) {
+    aliquotaInss = 0.11;
+    inss = salarioBruto * aliquotaInss;
+} else {
+    inss = 570.88;
 }
 
+baseCalculoIR = salarioBruto - inss;
+
+if (baseCalculoIR <= 1903.98) {
+    aliquotaIR = 0;
+    deducaoIR = 0;
+} else if (baseCalculoIR <= 2826.65) {
+    aliquotaIR = 0.075;
+    deducaoIR = 142.80;
+} else if (baseCalculoIR <= 3751.08) {
+    aliquotaIR = 0.15;
+    deducaoIR = 354.80;
+} else if (baseCalculoIR <= 4664.68) {
+    aliquotaIR = 0.225;
+    deducaoIR = 636.13;
+} else {
+    aliquotaIR = 0.275;
+    deducaoIR = 869.36;
+};
+
+impostoRenda = (baseCalculoIR * aliquotaIR) - deducaoIR;
+
+let salarioLiquido = salarioBruto - inss - impostoRenda;
+console.log(salarioLiquido);
