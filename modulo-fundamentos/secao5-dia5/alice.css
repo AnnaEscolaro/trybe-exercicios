@@ -17,6 +17,10 @@ html {
     list-style: none;
   }
 
+  header nav {
+    display: none;
+  }
+
   p:nth-of-type(1) {
     font-size: 1.25em;
     font-weight: bold;
@@ -29,6 +33,7 @@ html {
   nav ul,
   nav ul li {
     color: whitesmoke;
+    display: none;
   }
 }
 
@@ -50,14 +55,74 @@ html {
 /* TELA GRANDE */
 @media screen and (min-width: 992px) {
   * {
-    background-color: rgb(194, 216, 246);
-    margin: 0, 0, 0 0;
+    background-color: lightsteelblue;
+    margin: 0 0 0 0;
     list-style: none;
     padding: 0;
   }
 
-  p:nth-of-type(1) {
+  header p {
     font-size: 2em;
     font-weight: bold;
+    background-color: midnightblue;
+    color: whitesmoke;
+    padding: 2%;
+    text-align: center;
   }
+
+  nav ul,
+  nav ul li {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5%;
+    background-color: mediumvioletred;
+    color: whitesmoke
+  }
+
+  .aside-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+  }
+
+
+  .main-content {
+    margin: 1% 1% 1% 1%;
+    text-align: justify;
+    padding: 2%;
+    border-radius: 5%;
+  }
+
+  .main-content h1 {
+    text-align: center;
+  }
+
+  .main-content,
+  .main-content h1,
+  .main-content p,
+  .main-content p i {
+    background-color: rgb(194, 216, 246);
+  }
+
+  footer,
+  footer p,
+  footer h3 {
+    display: flex;
+    flex-direction: column;
+    background-color: midnightblue;
+    color: whitesmoke;
+    text-align: center;
+  }
+
+  footer h3 {
+    color: aqua;
+    padding: 2%;
+  }
+
+  footer {
+    padding: 2%;
+  }
+
 }
