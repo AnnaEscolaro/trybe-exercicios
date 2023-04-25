@@ -28,13 +28,36 @@ html {
   nav,
   nav ul,
   nav ul li {
-    background-color: midnightblue;
     color: whitesmoke;
   }
 }
 
 /* TELA MÉDIA */
-@media screen and (min-width: 601px) and (max-width: 991px) {}
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  * {
+    background-color: rgb(188, 210, 238);
+    margin: 0, 0, 0 0;
+    list-style: none;
+    padding: 0;
+  }
+
+  p:nth-of-type(1) {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
 
 /* TELA GRANDE */
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+  * {
+    background-color: rgb(194, 216, 246);
+    margin: 0, 0, 0 0;
+    list-style: none;
+    padding: 0;
+  }
+
+  p:nth-of-type(1) {
+    font-size: 2em;
+    font-weight: bold;
+  }
+}
